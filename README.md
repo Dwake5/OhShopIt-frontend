@@ -1,68 +1,20 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# OhShopIt-frontend
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+This is a full stack project I am working on with a friend. I am making it in order to keep both my front and backend skills fresh, learn new skills, colloborate and make something cool. I would like to first make this into a web app, like I did with my last large app, Kratos. Then I would like to move it onto mobile using React Native and deploy it to the app store.
 
-### `yarn start`
+My friend, Lee, originally had the idea. Is very good at art and design, and will be able to contribute artwork, UI recommendations, suggest features and the like.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The app intends to solve a real world problem. The problem being that: In a nuclear household one parent often does most of the shopping, other people in the house ask them to buy stuff, and when they go shopping they occasionally forget things.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This app aims to resolve that issue, by giving everyone in the home/office etc access to the app and a communal shopping list, which can then be viewed and items purchased and deleted when at the supermarket.
 
-### `yarn test`
+## Features
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Some features we have thought of to make it more user friendly and functional are:
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. A commonly suggested items list, based on previously entered items ( milk, bread etc)
+2. The ability to hide things from other users. Men may not want to see femine products and 'adult' products wouldnt be shown to children when viewing the list.
+3. If adding something that is already on the list, a warning will show up.
+4. Autosuggest when typing into list.

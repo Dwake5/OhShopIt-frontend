@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Header from "./components/Header";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import Add from "./components/navComponents/Add";
+import Shop from "./components/navComponents/Shop";
+import Invite from "./components/navComponents/Invite";
 
-function App() {
+import { MainDiv, Padding, NoMarginP } from "./style";
+
+const App = () => {
+  const [navScreen, changeScreen] = useState("add");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainDiv>
+      <Header />
+      <NoMarginP>Current Basket: HOME</NoMarginP>
+      <Padding>
+        <NavBar navScreen={navScreen} changeScreen={changeScreen} />
+        {navScreen === "add" && <Add />}
+        {navScreen === "shop" && <Shop />}
+        {navScreen === "invite" && <Invite />}
+      </Padding>
+      <Footer />
+    </MainDiv>
   );
-}
+};
 
 export default App;
